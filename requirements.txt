@@ -86,6 +86,7 @@ faicons
 pandas
 pyarrow
 plotly
+scipy
 seaborn
 shiny
 shinylive

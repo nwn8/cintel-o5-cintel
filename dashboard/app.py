@@ -41,6 +41,13 @@ with ui.sidebar(open="open"):
         "A demonstration of real-time temperature readings in Antarctica.",
         class_="text-center",
     )
+    ui.a(
+        "GitHub App",
+        href="https://github.com/nwn8/cintel-o5-cintel",
+        target="_blank",
+    )
+
+    ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank")
 
 
 #---------------------------------------------------------------------
@@ -69,3 +76,11 @@ def display_time():
     """Get the latest reading and return a timestamp string"""
     latest_dictionary_entry = reactive_calc_combined()
     return f"{latest_dictionary_entry['timestamp']}"
+
+with ui.layout_columns():
+    with ui.card():
+        ui.card_header("Current Data (placeholder only)")
+
+with ui.layout_columns():
+    with ui.card():
+        ui.card_header("Current Chart (placeholder only)")
