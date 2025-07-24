@@ -96,7 +96,7 @@ shinywidgets
 
 # to run shiny app locally
 
-# shiny run --reload --launch-browser penguins/app.py
+# shiny run --reload --launch-browser dashboard/app.py
 
 
 
